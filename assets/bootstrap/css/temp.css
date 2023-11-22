@@ -1,0 +1,16 @@
+.h300 {
+    height: 300px;
+}
+
+.w325 {
+    width: 333px;
+}
+
+.coner1 {
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.cover1 {
+    box-shadow: 0px 0px 2px #000000;
+}

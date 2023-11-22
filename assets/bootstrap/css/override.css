@@ -1,0 +1,22 @@
+.bg-light {
+    background-color: rgb(142, 0, 0, 0.7) !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-family: Khmer OS Fasthand, Khmer OS Siemreap, Khmer OS Bokor, Khmer OS Battambang;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 17px !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    color: #ffffff !important;
+}
+
+.login {
+    font-size: 17px !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    color: #ffffff !important;
+}
