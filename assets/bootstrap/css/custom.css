@@ -1,0 +1,13 @@
+.fontsc {
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.fontmenu {
+    color: #ffffff;
+    font-family: Khmer OS Fasthand, Khmer OS Siemreap, Khmer OS Bokor, Khmer OS Battambang;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
