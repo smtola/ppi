@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+< lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,6 @@
         </div>
     </nav>
 </body>
-</html>
 </html>
 
 <script src="assets/bootstrap/js/jquery3.6.js"></script>
