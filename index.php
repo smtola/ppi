@@ -52,7 +52,6 @@
     </nav>
 </body>
 </html>
-</html>
 
 <script src="assets/bootstrap/js/jquery3.6.js"></script>
 <script src="assets/bootstrap/js/popper.min.js"></script>
