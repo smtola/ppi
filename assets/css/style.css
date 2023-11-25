@@ -5,6 +5,7 @@
 }
 
 :root {
+    --bs-cource: #f6783a;
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -60,4 +61,46 @@
 
 .bg-nav{
     background-color: rgb(142, 0, 0, 0.7) !important;;
+}
+
+.bg-marquee{
+    position: relative;
+    bottom: 8px;
+    color: var(--bs-white);
+    padding-top: .9rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    background: #0d6efd;
+}
+
+.sub-header{
+    font-weight: bold;
+    color: var(--bs-info);
+}
+.header{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.sub{
+    /* font-weight: bold; */
+    color: var(--bs-info);
+    font-size: 1.3rem;
+}
+
+.cource{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--bs-cource);
+}
+
+.line-sub{
+    line-height: 1;
+}
+
+.in-year{
+    color: var(--bs-gray);
+    font-size: .9rem;
 }
