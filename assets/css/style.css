@@ -60,10 +60,11 @@
 }
 
 .bg-nav{
-    background-color: rgb(142, 0, 0, 0.7) !important;;
+    background-color: rgb(142, 0, 0, 0.7);
 }
 
 .bg-marquee{
+    display: grid;
     position: relative;
     bottom: 8px;
     color: var(--bs-white);
@@ -103,4 +104,8 @@
 .in-year{
     color: var(--bs-gray);
     font-size: .9rem;
+}
+
+.text-justify{
+    text-align: justify;
 }
