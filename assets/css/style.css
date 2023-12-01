@@ -61,3 +61,12 @@
 .bg-nav{
     background-color: rgb(142, 0, 0, 0.7) !important;;
 }
+
+/* register From */
+.modal-header{
+    display: block;
+    padding:3px;
+}
+.modal-footer{
+    padding:3px;    
+}
