@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/font-kh.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/course_styles.css">
+    <link rel="stylesheet" href="./assets/css/information_styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm bg-nav">        
-        <div class="container-fluid">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <!-- Menu this page -->
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #c92a2a;">        
+        <div class="container-fluid" style="padding: 0 15px;">
             <a class="navbar-brand text-white" href="#">PPI</a>
             <ul class="navbar-nav" >
                 <li class="nav-item">
@@ -50,6 +55,206 @@
             </ul>
         </div>
     </nav>
+    
+    <!-- section of menu -->
+    <div id="home">
+<!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+        
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/images/1.jpg" alt="Los Angeles" class="d-block w-100 h-75">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/2.jpg" alt="Chicago" class="d-block w-100 h-75">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/3.jpg" alt="New York" class="d-block w-100 h-75">
+            </div>
+            </div>
+        
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div id="grade">
+        <div class="bg-marquee">
+            <marquee behavior="scroll" scrolldelay="80" onmouseover="this.stop();" onmouseout="this.start();">
+                <p>វិទ្យាស្ថានពហុបច្ចេកទេសព្រះកុសុមៈ (PPI) មានទីតាំងតែមួយគត់ ការិយាល័យទទួលពាក្យតែមួយកន្លែងគត់ មិនមាននៅកន្លែងផ្សេងទេ ដូច្នេះមុនពេលប្អូនៗទទួលពាក្យចុះឈ្មោះចូលរៀនសូមពិនិត្យពាក្យនោះឱ្យបានច្បាស់លាស់ថា វិទ្យាស្ថានពហុបច្ចេកទេសព្រះកុសុមៈឬមិនមែន។ ទីតាំងស្ថិតនៅតាមបណ្តោយមហាវិថីសហព័ន្ធរុស្សី ច្រកចូលខាងកើតក្រុមហ៊ុន Metfone និងវត្តទឹកថ្លា ចម្ងាយ 180ម៉ែត្រ ។ ចាប់ផ្តើមទទួលពាក្យថ្នាក់អាហារូបករណ៍ (100%) និងថ្នាក់សិក្សាបង់ថ្លៃ 1. វិស្វកម្មអគ្គិសនី 2. វិស្វកម្មសំណង់ស៊ីវិល 3. វិស្វកម្មអេឡិចត្រូនិក 4. បច្ចេកវិទ្យាព័ត៌មាន 5. គណនេយ្យនិងហិរញ្ញវត្ថុ 6. គ្រប់គ្រង 7. ម៉ាឃិតធីង ទំនាក់ទនងលេខ៖ 016528800, 011760000, 012515584, 012707544, 017355283, 015206056, 086477746, 098696005, 081413151 ។</p>   
+            </marquee>
+        </div>
+        <div class="container-fluid">
+            <div class="section-title text-center">
+                <h3 class="sub-header mt-1">មហាវិទ្យាល័យ</h3>
+                <p class="header">ជ្រើសរើសវិទ្យាល័យតាមជំនាញ់ណាមួយ</p>
+            </div>
+
+            <div class="container-items">
+                <div class="course-items">
+                    <div class="course-thumb">
+                        <img src="https://preview.colorlib.com/theme/unica/img/course/1.jpg" alt="course">
+                        <div class="course-cat">
+                            <a href="#"><span>Business</span></a>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <h4>Certificate Course in Writing <br> for a Global Market</h4>
+                    </div>
+                </div>
+                <div class="course-items">
+                    <div class="course-thumb">
+                        <img src="https://preview.colorlib.com/theme/unica/img/course/1.jpg" alt="course">
+                        <div class="course-cat">
+                            <a href="#"><span>Business</span></a>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <h4>Certificate Course in Writing <br> for a Global Market</h4>
+                    </div>
+                </div>
+                <div class="course-items">
+                    <div class="course-thumb">
+                        <img src="https://preview.colorlib.com/theme/unica/img/course/1.jpg" alt="course">
+                        <div class="course-cat">
+                            <a href="#"><span>Business</span></a>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <h4>Certificate Course in Writing <br> for a Global Market</h4>
+                    </div>
+                </div>
+                <div class="course-items">
+                    <div class="course-thumb">
+                        <img src="https://preview.colorlib.com/theme/unica/img/course/1.jpg" alt="course">
+                        <div class="course-cat">
+                            <a href="#"><span>Business</span></a>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <h4>Certificate Course in Writing <br> for a Global Market</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-transparent"> </div>
+
+        <div class="cont-info" style="margin: 2.5rem 0;">
+            <div class="section-title text-center">
+                <h3 class="sub-header mt-1">ព័ត៌មានបន្ថែម</h3>
+            </div>
+
+            <div class="container_info">
+                <div class="content_info">
+                    <div class="title">
+                        <span><i class="bi bi-clock"></i></span>
+                        <span>ម៉ោងសិក្សា</span>
+                    </div>    
+                    <hr>
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនព្រឹក ៖ ម៉ោង ៧ : ០០ ដល់ ១២ : ០០</p>
+                    </div>
+
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនរសៀល ៖ ម៉ោង ១ : ៣០ ដល់ ៥ : ០០</p>
+                    </div>
+
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនយប់ ៖ ម៉ោង ៥ : ៣០ ដល់ ៨ : ៣០</p>
+                    </div>
+
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនថ្ងៃសៅរ៍-អាទិត្យ ៖ សិក្សាពេលព្រឹក និងថ្ងៃ</p>
+                    </div>
+                    <hr>
+                    <div class="btnDetail">
+                        <a href="#">ចុចមើលបន្ថែម</a>
+                    </div>
+                </div>
+
+                <div class="content_info">
+                    <div class="title">
+                        <span><i class="bi bi-clock"></i></span>
+                        <span>ម៉ោងសិក្សា</span>
+                    </div>    
+                    <hr>
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនព្រឹក ៖ ម៉ោង ៧ : ០០ ដល់ ១២ : ០០</p>
+                    </div>
+
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនរសៀល ៖ ម៉ោង ១ : ៣០ ដល់ ៥ : ០០</p>
+                    </div>
+
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនយប់ ៖ ម៉ោង ៥ : ៣០ ដល់ ៨ : ៣០</p>
+                    </div>
+
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនថ្ងៃសៅរ៍-អាទិត្យ ៖ សិក្សាពេលព្រឹក និងថ្ងៃ</p>
+                    </div>
+                    <hr>
+                    <div class="btnDetail">
+                        <a href="#">ចុចមើលបន្ថែម</a>
+                    </div>
+                </div>
+
+                <div class="content_info">
+                    <div class="title">
+                        <span><i class="bi bi-clock"></i></span>
+                        <span>ម៉ោងសិក្សា</span>
+                    </div>    
+                    <hr>
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនព្រឹក ៖ ម៉ោង ៧ : ០០ ដល់ ១២ : ០០</p>
+                    </div>
+
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនរសៀល ៖ ម៉ោង ១ : ៣០ ដល់ ៥ : ០០</p>
+                    </div>
+
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនយប់ ៖ ម៉ោង ៥ : ៣០ ដល់ ៨ : ៣០</p>
+                    </div>
+
+                    <div class="items-list" style="display: flex;">
+                        <span><i class="bi bi-skip-forward"></i></span>
+                        <p style="color:#4dabf7;margin:0 5px;">វេនថ្ងៃសៅរ៍-អាទិត្យ ៖ សិក្សាពេលព្រឹក និងថ្ងៃ</p>
+                    </div>
+                    <hr>
+                    <div class="btnDetail">
+                        <a href="#">ចុចមើលបន្ថែម</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
