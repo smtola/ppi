@@ -13,7 +13,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <!-- Menu this page -->
-    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #c92a2a;">        
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #852d35;">        
         <div class="container-fluid" style="padding: 0 15px;">
             <a class="navbar-brand text-white" href="#">PPI</a>
             <ul class="navbar-nav" >
@@ -256,6 +256,15 @@
         </div>
     </div>
 </body>
+<script>
+    let menu = document.querySelector('#menu-bars');
+    let navbar = document.querySelector('.navbar');
+
+    menu.onclick = () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('bg-danger');
+    }
+</script>
 </html>
 
 <script src="assets/bootstrap/js/jquery3.6.js"></script>
