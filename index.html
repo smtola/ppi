@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/course_styles.css">
+    <link rel="stylesheet" href="./assets/css/course-style.css">
     <link rel="stylesheet" href="./assets/bootstrap/css/font-kh.css">
     <link rel="stylesheet" href="./assets/css/information_styles.css">
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <!-- Menu this page -->
     <nav class="nav-theme" id="navbar">        
         <div class="container-nav">
-            <a class="logo-title" href="#">PPI</a>
-            <ul class="navbar-ul" >
+            <div class="logo">
+                <a href="./" class="logo-title" href="#">PPI</a>
+                <div id="icon">
+                    <a href="javascript:void(0)" onclick="onBtnMenu()">
+                        <i class="bi bi-list" ></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="navbar-ul" id="listItems">
                 <li class="nav-item">
                     <a  href="register.php">Link 1</a>
                 </li>
@@ -29,6 +35,8 @@
                 <li class="nav-item">
                     <a class="dropdown-btn" onclick="onDropdown()">Dropdown</a>
                     <div id="myDropdown" class="dropdown-content">
+                        <i class="bi bi-caret-up-fill arrow-up" id="arrowIcon"></i>
+                        <i class="bi bi-caret-left-fill arrow-left"></i>
                         <a href="#">Link</a>
                         <a href="#">Another link</a>
                         <a href="#">A third link</a>
@@ -53,11 +61,7 @@
                     <a  href="#">Link 10</a>
                 </li>
             </ul>
-            <div id="icon">
-                <a href="javascript:void(0);" >
-                    <i class="bi bi-list"></i>
-                </a>
-            </div>
+            
         </div>
     </nav>
     
@@ -75,27 +79,15 @@
         
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://images.pexels.com/photos/15469650/pexels-photo-15469650/free-photo-of-monochroom-winterlandschap.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" width="100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://www.dummyimage.com/600x290/000/fff&text=study+2" alt="" width="100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://www.dummyimage.com/600x290/000/fff&text=study+3" alt="" width="100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://www.dummyimage.com/600x290/000/fff&text=study+4" alt="" width="100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://www.dummyimage.com/600x290/000/fff&text=study+5" alt="" width="100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://www.dummyimage.com/600x290/000/fff&text=study+6" alt="" width="100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://www.dummyimage.com/600x290/000/fff&text=study+7" alt="" width="100%">
-                </div>
+            <div class="carousel-item active">
+                <img src="./assets/images/1.jpg" alt="Los Angeles" class="d-block w-100 h-75">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/2.jpg" alt="Chicago" class="d-block w-100 h-75">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/3.jpg" alt="New York" class="d-block w-100 h-75">
+            </div>
             </div>
         
             <!-- Left and right controls/icons -->
@@ -115,9 +107,9 @@
             </marquee>
         </div>
         <div class="container-fluid">
-            <div class="section-title text-center">
-                <h3 class="sub-header mt-1">មហាវិទ្យាល័យ</h3>
-                <p class="header">ជ្រើសរើសវិទ្យាល័យតាមជំនាញ់ណាមួយ</p>
+            <div class="section-title">
+                <h3 >មហាវិទ្យាល័យ</h3>
+                <p >ជ្រើសរើសវិទ្យាល័យតាមជំនាញ់ណាមួយ</p>
             </div>
             <div class="row p-0 m-0">
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-1 m-0">
@@ -255,11 +247,9 @@
 
         <div class="content-transparent"> </div>
 
-    <div id="contace" style="padding-top: 3rem;">
-        <div class="container-fluid">
+        <div class="cont-info" style="margin: 2.5rem 0;">
             <div class="section-title text-center">
-                <h3 class="sub-header">អំពីសាលា PPI</h3>
-                <p class="header">ព័ត៌មានបន្ថែម</p>
+                <h3 class="sub-header mt-1">ព័ត៌មានបន្ថែម</h3>
             </div>
             <div class="row m-0 p-0 ">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-12 p-1 m-0">
@@ -358,8 +348,5 @@
 </body>
 
 </html>
-
-<script src="./assets/bootstrap/js/jquery3.6.js"></script>
 <script src="./assets/js/scripts.js"></script>
-<script src="./assets/bootstrap/js/popper.min.js"></script>
-<script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/slide-scripts.js"></script>
