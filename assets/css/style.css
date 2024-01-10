@@ -80,16 +80,19 @@
 .sub-header{
     font-weight: bold;
     color: var(--bs-info);
+    text-align: center;
 }
 .header{
     font-weight: bold;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .sub{
     /* font-weight: bold; */
     color: var(--bs-info);
-    font-size: 1.3rem;
+    font-family: 'Khmer OS Muol Light';
+    text-align: center;
 }
 
 .cource{
@@ -110,4 +113,11 @@
 
 .text-justify{
     text-align: justify;
+}
+
+.text-hidden{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
