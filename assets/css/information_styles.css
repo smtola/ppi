@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,500;1,900&display=swap');
+
+.container_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin:15px 0;
+}
+.content_info{
+    background-color: transparent;
+    padding:1rem;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.items-list{
+    margin:10px 0;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title>span{
+    margin: 0 4px;
+}
+.btnDetail{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8590c;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.btnDetail a {
+    text-decoration: none;
+    color:#eee;
+}
+.btnDetail:hover{
+    background-color: #f76707;
+}
+.content-transparent{
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    margin-top: 2rem;
+}
