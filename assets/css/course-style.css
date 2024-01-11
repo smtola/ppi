@@ -22,7 +22,8 @@
     text-align: center;
     width: 100%;
     left: 0;
-    bottom: 1.3vh;
+    bottom: 3.5vh;
+    transition: all 0.5s ease;
 }
 .course-cat > a {
     text-transform: uppercase;
@@ -44,5 +45,10 @@
     margin:10px 0;
 }
 
-
+@media screen and (max-width: 768px) {
+    .course-cat{
+        bottom: 4vh;
+        transition: all 0.5s ease;
+    }
+}
 
