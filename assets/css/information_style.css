@@ -36,6 +36,7 @@
     padding:.5rem 1.5rem;
     cursor: pointer;
     border-radius: 15px;
+    margin:.5rem 0;
 }
 .btnDetail a {
     text-decoration: none;
@@ -54,4 +55,3 @@
     background-position: center;
     margin-top: 2rem;
 }
-/* <!-- <h1></h1> --> */

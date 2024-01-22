@@ -27,4 +27,31 @@ window.onscroll = function () {
     }
 };
 
-// d
+var typed2 = new Typed('.text1', {
+  strings: ['អនុបណ្ឌិត (២ឆ្នាំ)','ថ្នាក់បរិញ្ញាប័ត្រ(៤.៥ ឆ្នាំ)','ថ្នាក់បរិញ្ញាប័ត្ររង(២ ឆ្នាំ)'],
+  typeSpeed:200,
+  backDelay: 500,
+  startDelay: 1000,
+  loop:true
+});
+var typed2 = new Typed('.text2', {
+  strings: ['អនុបណ្ឌិត (២ឆ្នាំ)','ថ្នាក់បរិញ្ញាប័ត្រ(៤.៥ ឆ្នាំ)','ថ្នាក់បរិញ្ញាប័ត្ររង(២ ឆ្នាំ)'],
+  typeSpeed:200,
+  backDelay: 500,
+  startDelay: 1000,
+  loop:true
+});
+var typed2 = new Typed('.text3', {
+  strings: ['អនុបណ្ឌិត (២ឆ្នាំ)','ថ្នាក់បរិញ្ញាប័ត្រ(៤.៥ ឆ្នាំ)','ថ្នាក់បរិញ្ញាប័ត្ររង(២ ឆ្នាំ)'],
+  typeSpeed:200,
+  backDelay: 500,
+  startDelay: 1000,
+  loop:true
+});
+var typed2 = new Typed('.text4', {
+  strings: ['អនុបណ្ឌិត (២ឆ្នាំ)','ថ្នាក់បរិញ្ញាប័ត្រ(៤.៥ ឆ្នាំ)','ថ្នាក់បរិញ្ញាប័ត្ររង(២ ឆ្នាំ)'],
+  typeSpeed:200,
+  backDelay: 500,
+  startDelay: 1000,
+  loop:true
+});
