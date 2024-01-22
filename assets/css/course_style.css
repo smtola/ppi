@@ -8,7 +8,6 @@
     justify-content: center;
     align-items: center;
     transition: all .5s ease;
-    text-align: center;
 }
 .course-items{
     margin:0;
@@ -22,10 +21,10 @@
 
 .course-info{
     margin:10px 0;
+    padding:0 1rem;
 }
 .sec_text{
     color:#ffe066;
-    font-size: 1.5rem;
 }
 @media only screen and (max-width:1200px) {
     .course-thumb > img{
@@ -42,8 +41,13 @@
 }
 @media only screen and (max-width:400px) {
     .course-thumb > img{
-        width: 380px;
+        width: 370px;
         height: 250px;
     }
 }
-
+@media only screen and (max-width:370px) {
+    .course-thumb > img{
+        width: 340px;
+        height: 250px;
+    }
+}

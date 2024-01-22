@@ -13,7 +13,7 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     background: rgba(84, 18, 18, 0.5);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -165,13 +165,13 @@
 
 .btn-container > button:first-child{
     position:absolute;
-    z-index: 100;
+    z-index: 1;
     left:25px;
 }
 
 .btn-container > button:last-child{
     position:absolute;
-    z-index: 100;
+    z-index: 1;
     right:25px;
 }
 
