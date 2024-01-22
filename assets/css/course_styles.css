@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,500;1,900&display=swap');
+
+.container-items{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+    text-align: center;
+}
+.course-items{
+    margin:0;
+    padding:0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.course-thumb>img{
+    border-radius: 4px;
+    transition: all .5s ease;
+}
+
+.course-info{
+    margin:10px 0;
+}
+.sec-text{
+    color:#ffe066;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width:1200px) {
+    .course-thumb > img{
+        width: 280px;
+        height: 190px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .course-thumb > img{
+        width: 395px;
+        height: 250px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .course-thumb > img{
+        width: 380px;
+        height: 250px;
+    }
+}
+

@@ -13,4 +13,3 @@ $("#validators").validate({
        form.submit();
      }
    });
-   // d
