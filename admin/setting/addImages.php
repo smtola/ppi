@@ -8,7 +8,7 @@
           <hr>
           <div class="body">
               <div class="form-control">
-                  <form action="addPictures.php" method="post" enctype="multipart/form-data">
+                  <form action="./setting/addPictures.php" method="post" enctype="multipart/form-data">
                       <div class="input_form">
                           <label for="img">Image</label>
                           <img src="./assets/images/img.png" id="img">

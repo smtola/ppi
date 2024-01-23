@@ -1,3 +1,6 @@
+<?php
+include "./auth/loginSession.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -80,8 +83,8 @@
 
     <!-- Modal Add,Edit,Delete-->
     <?php
-        include "./addImages.php";
-        include "./editPictures.php";
+    include "./setting/addImages.php";
+    include "./setting/editPictures.php";
     ?>
     <!-- End Modal -->
 </body>

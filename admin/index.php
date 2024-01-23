@@ -1,3 +1,6 @@
+<?php 
+    include "./auth/loginSession.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 

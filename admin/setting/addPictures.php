@@ -1,5 +1,5 @@
 <?php
-include "./config/class.php";
+include "../config/class.php";
 $obj = new myclass;
 // Check if the form was submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -21,10 +21,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Validate type of the file
         if(in_array($filetype, $allowed)){
             // Check whether file exists before uploading it
-            if(file_exists("upload/" . $filename)){
+            if(file_exists("../upload/" . $filename)){
                 echo $filename . " is already exists.";
             } else{
-                if(move_uploaded_file($_FILES["anyfile"]["tmp_name"], "upload/" . $filename)){
+                if(move_uploaded_file($_FILES["anyfile"]["tmp_name"], "../upload/" . $filename)){
 
                     $field = array("file","type","size");
                     $value = array("'$filename'","'$filetype'","'$filesize'");
@@ -32,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     
                     if($query){
                         echo "Your file was uploaded successfully.";
-                        header("location:pictures.php");
+                        header("location:../pictures.php");
                     }else{
                         echo "failed!";
                     }

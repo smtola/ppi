@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="./assets/css/theme.css">
-    <link rel="stylesheet" href="./assets/css/course_style.css">
-    <link rel="stylesheet" href="./assets/bootstrap/css/font-kh.css">
-    <link rel="stylesheet" href="./assets/css/information_style.css">
+    <link rel="stylesheet" href="./assets/css/themes.css">
+    <link rel="stylesheet" href="./assets/css/course_styles.css">
+    <link rel="stylesheet" href="./assets/css/information_styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
@@ -65,12 +64,11 @@
         </div>
     </nav>
 
-
     <!-- slide-image -->
     <div class="slide-container">
         <div class="image-wrapper">
             <?php
-            include "./api/class.php";
+            include "../admin/config/class.php";
             $obj = new myclass;
             $i = 0;
             $query = $obj->select("tblpictures");
