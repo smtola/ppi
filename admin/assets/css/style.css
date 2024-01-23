@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background: #edf2ff;
+}
+.navbar{
+    background: #a5d8ff;
+    padding: 0 15px;
+    border-radius: 4px;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.logo{
+   margin-top: 4px;
+}
+ul.list-items{
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    list-style: none;
+    text-transform: uppercase;
+}
+li>a{
+    text-decoration: none;
+    color:#e9ecef;
+}
+
+li>a:hover{
+    color:#f8f9fa;
+}
+
+.app-container{
+    margin:1rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1rem;
+}
+.app-container>a{
+    text-decoration: none;
+}
+.app-box{
+    width: 250px;
+    display: grid;
+    background: #f8f9fa;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.app-box>span{
+    font-size: 20px;
+    color:#868e96;
+}
+div.app-box:hover span{
+    color:#343a40;
+}
+.content-app{
+    border-bottom:2px solid #495057;
+    padding-bottom: 5px;
+}
+.content-app>span{
+    color:#495057;
+}
+.sidebar {
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #d0ebff;
+    overflow-x: hidden;
+    padding-top: 16px;
+    margin-top: 4.2rem;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    }
+
+    /* Style sidebar links */
+    .sidebar a {
+    padding: 2px 8px 2px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #343a40;
+    display: block;
+    }
+
+    /* Style links on mouse-over */
+    .sidebar a:hover {
+    color: #868e96;
+    }
+
+    /* Style the main content */
+    .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        padding:5px 40px;
+        padding-right: 10px;
+    }
+    .lists-manager{
+        margin: 10px 0;
+    }
+    .list-link>a{
+        color:#343a40;
+    }
+    .list-link>a:hover{
+        color:#868e96;
+    }
+    /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+    @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    }

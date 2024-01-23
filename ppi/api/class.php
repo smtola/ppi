@@ -4,7 +4,7 @@
 			$localhost = "localhost";
 			$username = "root";
 			$password = "";
-			$dbName = "dbmusicstar";
+			$dbName = "ppiinformation";
 			$connect = new mysqli($localhost,$username,$password,$dbName);
 			return $connect;
 		}

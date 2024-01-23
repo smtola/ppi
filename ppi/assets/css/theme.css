@@ -175,33 +175,6 @@
     right:25px;
 }
 
-.dots-container {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 118px;
-    display: flex;
-    justify-content: center;
-    backdrop-filter: blur(50px);
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 100px;
-    padding: 5px 0;
-    gap: 0.5rem;
-  }
-  .dot {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.3);
-    transition: all 0.2s ease-out;
-  }
-  .dot.active {
-    width: 40px;
-    border-radius: 100px;
-    background-color: rgba(255, 255, 255, 0.7);
-  }
 
   @keyframes nextOut {
     from {
