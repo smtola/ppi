@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,500;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kantumruy',sans-serif;
+}
+
+.nav-theme {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(84, 18, 18, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px 15px;
+    transition: all .5s ease;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.changeThemeNav {
+    background: rgb(84, 18, 18);
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-title {
+    margin-left: 5px;
+    text-decoration: none;
+    color: #ffec99;
+}
+
+.nav-item>a {
+    text-decoration: none;
+    padding: 0 5px;
+    color: #ffe066;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-item > a:hover {
+    color: #ffe066;
+}
+
+#icon {
+    display: none;
+    transition: all .5s ease;
+
+}
+
+#icon a i {
+    color: #ffec99;
+    font-size: 1.5rem;
+    transition: all .5s ease;
+}
+
+#icon a i:hover {
+    color: #ffe066;
+}
+
+.dropdown-btn {
+    padding: 0 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: rgba(84, 18, 18, .4);
+    position: absolute;
+    top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    transition: all .5s ease;
+}
+
+.dropdown-content > a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 55px 5px 10px;
+    transition: all .5s ease;
+    font-family: 'Roboto', sans-serif;
+    color: #ffe066;
+}
+
+.dropdown-content > a:hover {
+    background-color: rgba(86, 16, 16, 0.795);
+}
+
+.show {
+    display: block;
+    transition: all .5s ease;
+}
+
+/* slide  */
+
+.slide-container{
+    position: relative;
+}
+
+.image-wrapper{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.image-wrapper > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrapper > img:not(.active){
+    left: -100%;
+}
+
+.btn-container{
+    position: absolute;
+    top:45%;
+    width: 100%;
+}
+
+.btn-container > button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color:grey;
+}
+
+.btn-container > button:hover{
+    color:rgb(49,49,49);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 30px rgba(196,196,196,0.5);
+    background-color: transparent;
+}
+
+.btn-container > button:first-child{
+    position:absolute;
+    z-index: 1;
+    left:25px;
+}
+
+.btn-container > button:last-child{
+    position:absolute;
+    z-index: 1;
+    right:25px;
+}
+
+
+  @keyframes nextOut {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  @keyframes nextIn {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  @keyframes prevOut {
+    from {
+      left: 0%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+  @keyframes prevIn {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  
+.bg-marquee{
+    background-color: rgba(86, 16, 16, 1);
+}
+
+.bg-marquee > marquee{
+    margin-top: 10px;
+    color:#eee;
+}
+
+.section-title{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:1rem;
+}
+
+@media screen and (max-width:1100px){
+    .image-wrapper{
+        height: 465px;
+    }
+    .btn-container > button:first-child{
+        z-index: 0;
+    }
+    
+    .btn-container > button:last-child{
+        z-index:0;
+    }
+}
+
+@media screen and (max-width:980px){
+    .image-wrapper{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-theme {
+        padding-top: 12px;
+        padding-left: 12px;
+        padding-bottom: 10px;
+        transition: all .5s ease;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        left: 110px;
+        top: 175px;
+        display: none;
+        background-color: rgb(84, 18, 18);
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+        transition: all .5s ease;
+    }
+
+    .show {
+        display: block;
+        transition: all .5s ease;
+    }
+
+    #icon {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        transition: all 0.5s ease;
+    }
+
+    .container-nav {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .navbar-ul {
+        list-style: none;
+        display: none;
+        align-items: center;
+        margin-bottom: 0;
+        transition: all 0.5s ease;
+    }
+
+    .nav-item a:active {
+        color: #ffe066;
+    }
+
+    #icon a i:active {
+        color: #ffe066;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .show-1 {
+        display: block;
+        transition: all .5s ease;
+    }
+
+    .image-wrapper{
+        height: 375px;
+    }
+
+    .btn-container > button{
+        width: 30px;
+        height: 30px;
+    }
+    .btn-container > button:first-child{
+        font-size: 18px;
+    }
+    
+    .btn-container > button:last-child{
+        font-size: 18px;
+    }
+    .dots-container{
+        padding:4px 0;
+        gap: 0.3rem;
+        width: 100px;
+    }
+    .dot{
+        width: 9px;
+        height: 9px;
+    }
+}
+
+@media screen and (max-width:560px){
+    .image-wrapper{
+        height: 250px;
+    }
+
+}
+@media screen and (max-width:450px){
+    .image-wrapper{
+        height: 210px;
+    }
+}
+@media screen and (max-width:150px){
+    .image-wrapper{
+        height: 180px;
+    }
+}
