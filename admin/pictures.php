@@ -9,8 +9,8 @@ include "./auth/loginSession.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPP Store</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/theme.css">
-    <link rel="stylesheet" href="./assets/css/modal_style.css">
+    <link rel="stylesheet" href="./assets/css/themes.css">
+    <link rel="stylesheet" href="./assets/css/modal_styles.css">
     <style>
         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
     </style>
@@ -31,8 +31,7 @@ include "./auth/loginSession.php";
 
         <div class="content-lists">
             <div class="header">
-                <input type="search" id="search" placeholder="Search" onkeyup="myFunction()">
-
+                <input type="search" id="search" placeholder="Search" onkeypress="onSearch()">
                 <button type="button" class="btn-add" id="myBtn">Add</button>
             </div>
 
@@ -88,7 +87,7 @@ include "./auth/loginSession.php";
     ?>
     <!-- End Modal -->
 </body>
-<script src="./assets/js/script.js"></script>
+<script src="./assets/js/scripts.js"></script>
 <script src="./assets/js/modal_script.js"></script>
 
 </html>

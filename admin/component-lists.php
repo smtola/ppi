@@ -97,5 +97,5 @@ include "./auth/loginSession.php";
     ?>
     <!-- end content app -->
 </body>
-<script src="./assets/js/script.js"></script>
+<script src="./assets/js/scripts.js"></script>
 </html>

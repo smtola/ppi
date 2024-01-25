@@ -20,15 +20,15 @@
                 </li>
                 <li>
                     <div class="dropdown">
-                    <a onclick="myFunction()" class="dropbtn">
-                        <i class="bi bi-person" style="font-size: 20px;"></i>
-                        <span style="font-size: 18px;"><?php echo $_SESSION['user']?></span>
-                    </a>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="../admin/myprofile.php">My Profile</a>
-                        <a href="#">Change Password</a>
-                        <a href="../admin/auth/login.php">Log out</a>
-                    </div>
+                        <a onclick="clickDropdown()" class="dropbtn">
+                            <i class="bi bi-person" style="font-size: 20px;"></i>
+                            <span style="font-size: 18px;"><?php echo $_SESSION['user'] ?></span>
+                        </a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="../admin/myprofile.php">My Profile</a>
+                            <a href="#">Change Password</a>
+                            <a href="../admin/auth/login.php">Log out</a>
+                        </div>
                     </div>
                 </li>
             </ul>

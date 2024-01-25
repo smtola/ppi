@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2024 at 09:48 AM
+-- Generation Time: Jan 25, 2024 at 02:05 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -53,7 +53,7 @@ INSERT INTO `tblpictures` (`pic_id`, `file`, `type`, `size`) VALUES
 
 CREATE TABLE `tblusers` (
   `user_id` int(10) NOT NULL,
-  `fistname` varchar(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `firstname` varchar(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `lastname` varchar(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `username` varchar(250) NOT NULL,
   `password` varchar(250) NOT NULL,
@@ -65,9 +65,10 @@ CREATE TABLE `tblusers` (
 -- Dumping data for table `tblusers`
 --
 
-INSERT INTO `tblusers` (`user_id`, `fistname`, `lastname`, `username`, `password`, `type`, `phonenumber`) VALUES
+INSERT INTO `tblusers` (`user_id`, `firstname`, `lastname`, `username`, `password`, `type`, `phonenumber`) VALUES
 (2, 'Som', 'Tola', 'SOMTOLA', '93bf96c4e568fca09c46933803eb832e', 'admin', '0968199473'),
-(3, 'USER', 'USER', 'User1', '202cb962ac59075b964b07152d234b70', 'user', '0123456789');
+(3, 'USER', 'USER', 'User1', '202cb962ac59075b964b07152d234b70', 'user', '0123456789'),
+(6, 'user2', 'user2', 'user2', '202cb962ac59075b964b07152d234b70', 'user', '012345678');
 
 --
 -- Indexes for dumped tables
@@ -99,7 +100,7 @@ ALTER TABLE `tblpictures`
 -- AUTO_INCREMENT for table `tblusers`
 --
 ALTER TABLE `tblusers`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,4 +1,4 @@
-.content-lists .header{
+  .content-lists .header{
     margin:0.5rem 0;
     display: flex;
     justify-content: space-between;
@@ -6,7 +6,7 @@
 input[type="search"]{
     background-image: url('../images/searchicon.png');
     background-repeat: no-repeat;
-    background-position: 12.5rem 7px;
+    background-position: 12.5rem 10.5px;
     width: 230px;
     padding:7px 7px;
     font-size: 16px;
@@ -23,6 +23,8 @@ button[type="button"]{
     border: 0 solid #ffffff;
     border-radius: 4px;
     font-size: 16px;
+    margin:0;
+    padding:13px 10px;  
     cursor: pointer;
 }
 .content-lists .lists{

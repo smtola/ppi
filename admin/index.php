@@ -55,7 +55,7 @@
     </div>
     <!-- end content app -->
 </body>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/scripts.js"></script>
     <script src="./assets/js/modal_script.js"></script>
     <script src="./assets/setting/sweetalert2.min.js"></script>
     <script src="./assets/setting/sweetalert2.all.min.js"></script>

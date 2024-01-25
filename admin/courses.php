@@ -9,7 +9,7 @@ include "./auth/loginSession.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPP Store</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/themes.css">
     <style>
         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
     </style>
@@ -30,7 +30,7 @@ include "./auth/loginSession.php";
 
         <div class="content-lists">
             <div class="header">
-                <input type="search" id="search" placeholder="Search" onkeyup="myFunction()">
+                <input type="search" id="search" placeholder="Search" onkeypress="onSearch()">
 
                 <button type="button" class="btn-add">Add</button>
             </div>
@@ -68,6 +68,6 @@ include "./auth/loginSession.php";
     </div>
     <!-- end content app -->
 </body>
-<script src="./assets/js/script.js"></script>
+<script src="./assets/js/scripts.js"></script>
 
 </html>

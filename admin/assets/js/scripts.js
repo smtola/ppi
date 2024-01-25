@@ -1,6 +1,6 @@
 
 // filter
-function myFunction() {
+function onSearch() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("search");
@@ -27,32 +27,35 @@ function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
     icon.classList.add("bi-fullscreen-exit");
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
+  } else if (elem.webkitRequestFullscreen) {
+    /* Safari */
     elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
+  } else if (elem.msRequestFullscreen) {
+    /* IE11 */
     elem.msRequestFullscreen();
-  } 
+  }
 }
 
 function closeFullscreen() {
   if (document.exitFullscreen) {
     document.exitFullscreen();
     icon.classList.remove("bi-fullscreen-exit");
-  } else if (document.webkitExitFullscreen) { /* Safari */
+  } else if (document.webkitExitFullscreen) {
+    /* Safari */
     document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE11 */
+  } else if (document.msExitFullscreen) {
+    /* IE11 */
     document.msExitFullscreen();
   }
 }
 // checking usertype
-function checkUserType(file){
+function checkUserType(file) {
   var userType = document.querySelector("#usertype");
-  if(userType.value == 'admin'){
-    window.open(file, '_blank');
-  }else if(userType.value == 'editor'){
-    window.open(file, '_blank');
-  }
-  else{
+  if (userType.value == "admin") {
+    window.open(file, "_blank");
+  } else if (userType.value == "editor") {
+    window.open(file, "_blank");
+  } else {
     const Toast = Swal.mixin({
       toast: true,
       position: "top-end",
@@ -60,19 +63,18 @@ function checkUserType(file){
       timer: 3000,
       timerProgressBar: true,
       didOpen: (toast) => {
-          toast.onmouseenter = Swal.stopTimer;
-          toast.onmouseleave = Swal.resumeTimer;
-      }
-  });
-  Toast.fire({
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      },
+    });
+    Toast.fire({
       icon: "error",
-      title: "You are not management!"
-  });
+      title: "You are not management!",
+    });
   }
 }
-
-const btnDropdown = document.querySelector(".dropbtn");
 // dropdown menu items
-function myFunction() {
-   document.querySelector("#myDropdown").classList.toggle('show');
- }
+function clickDropdown() {
+  var btnDropdown = document.querySelector("#myDropdown");
+  btnDropdown.classList.toggle("show");
+}
