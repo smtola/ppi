@@ -1,4 +1,5 @@
 
+// filter
 function myFunction() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
@@ -43,4 +44,35 @@ function closeFullscreen() {
     document.msExitFullscreen();
   }
 }
+// checking usertype
+function checkUserType(file){
+  var userType = document.querySelector("#usertype");
+  if(userType.value == 'admin'){
+    window.open(file, '_blank');
+  }else if(userType.value == 'editor'){
+    window.open(file, '_blank');
+  }
+  else{
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+      }
+  });
+  Toast.fire({
+      icon: "error",
+      title: "You are not management!"
+  });
+  }
+}
 
+const btnDropdown = document.querySelector(".dropbtn");
+// dropdown menu items
+function myFunction() {
+   document.querySelector("#myDropdown").classList.toggle('show');
+ }

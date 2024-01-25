@@ -8,8 +8,8 @@ include "./auth/loginSession.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPP Store</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/themes.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
     <style>
         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
     </style>
@@ -17,11 +17,11 @@ include "./auth/loginSession.php";
 
 <body>
     <!-- navbar -->
-    <?php include "./include/navbar.php" ?>
+    <?php include "./includes/navbar.php" ?>
     <!-- end navbar -->
 
     <!-- content app -->
-    <?php include "./include/menu.php" ?>
+    <?php include "./includes/menu.php" ?>
 
     <div class="main">
         <div class="content-app">
@@ -68,6 +68,6 @@ include "./auth/loginSession.php";
     </div>
     <!-- end content app -->
 </body>
-<script src="./assets/js/scripts.js"></script>
+<script src="./assets/js/script.js"></script>
 
 </html>

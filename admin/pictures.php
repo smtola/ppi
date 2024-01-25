@@ -8,7 +8,7 @@ include "./auth/loginSession.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPP Store</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/theme.css">
     <link rel="stylesheet" href="./assets/css/modal_style.css">
     <style>
@@ -18,11 +18,11 @@ include "./auth/loginSession.php";
 
 <body>
     <!-- navbar -->
-    <?php include "./include/navbar.php" ?>
+    <?php include "./includes/navbar.php" ?>
     <!-- end navbar -->
 
     <!-- content app -->
-    <?php include "./include/menu.php" ?>
+    <?php include "./includes/menu.php" ?>
 
     <div class="main">
         <div class="content-app">
@@ -88,7 +88,7 @@ include "./auth/loginSession.php";
     ?>
     <!-- End Modal -->
 </body>
-<script src="./assets/js/scripts.js"></script>
+<script src="./assets/js/script.js"></script>
 <script src="./assets/js/modal_script.js"></script>
 
 </html>
